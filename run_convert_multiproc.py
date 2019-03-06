@@ -21,7 +21,7 @@ if not os.path.isdir(outdir):
 print(' >> Output directory: %s'%outdir)
 
 # Runs to parallelize over
-runs = ['276525']
+runs = [276525]
 
 proc_file = 'convertHistToParquet.py'
 processes = ['%s -i %s -o %s -r %s'%(proc_file, indir, outdir, run) for run in runs]
